@@ -1,0 +1,160 @@
+@import './Home.module.scss';
+
+.skills {
+    width: 50em;
+    max-width: 80vw;
+
+    hr {
+        width: 100%;
+        border: none;
+        background-color: $gray;
+        height: .2em;
+    }
+}
+
+.name {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+        font-family: 'Asap', sans-serif;
+        font-size: 1.4em;
+        font-weight: 500
+    }
+}
+
+.sectionNav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: fit-content;
+    
+    h1 {
+      margin: 0;
+      font-size: 5em;
+      font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif; 
+      font-weight: bolder;
+      letter-spacing: .1em;
+      color: $gray;     
+    }
+    
+    p {
+      letter-spacing: .05em;
+      right: 25%;
+      position: absolute;
+      font-family: 'Asap', sans-serif;
+    }
+}
+
+.jsSkillBar {
+    @include skillBar;
+    background-color: #f7e018;
+    width: 5%;
+} 
+
+@keyframes jsProgressAnimationHTML {
+    0% {
+        width: 5%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+.jsSkillFull {
+    @include skillBar;
+    width: 80%;
+    background-color: #d6ba32;
+    animation: jsProgressAnimationHTML 6s;
+}
+
+.cssSkillBar {
+    @include skillBar;
+    background-color: #1572b7;
+    width: 5%;
+} 
+
+@keyframes cssProgressAnimationHTML {
+    0% {
+        width: 5%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+.cssSkillFull {
+    @include skillBar;
+    width: 75%;
+    background-color: #1572b7;
+    animation: cssProgressAnimationHTML 6s;
+}
+
+.reactSkillBar {
+    @include skillBar;
+    background-color: #61dbfb;
+    width: 5%;
+} 
+
+@keyframes reactProgressAnimationHTML {
+    0% {
+        width: 5%;
+    }
+    100% {
+        width: 80%;
+}
+}
+
+.reactSkillFull {
+    @include skillBar;
+    width: 80%;
+    background-color: #61dbfb;
+    animation: reactProgressAnimationHTML 6s;
+}
+
+.nodeSkillBar {
+    @include skillBar;
+    background-color: #41a145;
+    width: 5%;
+} 
+
+@keyframes nodeProgressAnimationHTML {
+    0% {
+        width: 5%;
+    }
+    100% {
+        width: 55%;
+    }
+}
+
+.nodeSkillFull {
+    @include skillBar;
+    width: 55%;
+    background-color: #41a145;
+    animation: nodeProgressAnimationHTML 6s;
+}
+
+.fbSkillBar {
+    @include skillBar;
+    background-color: #41a145;
+    width: 5%;
+} 
+
+@keyframes fbProgressAnimationHTML {
+    0% {
+        width: 5%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+.fbSkillFull {
+    @include skillBar;
+    width: 75%;
+    background-color: #f7a212;
+    animation: fbProgressAnimationHTML 6s;
+}
